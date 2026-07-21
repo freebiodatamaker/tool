@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="wedding.png" />
+  <link rel="apple-touch-icon" href="wedding.png" />
+
+  <!-- Primary SEO -->
+  <title>FreeBiodataMaker — मोफत मराठी लग्नाचा बायोडाटा बनवा (PDF / इमेज डाउनलोड)</title>
+  <meta name="description" content="मोफत मराठी लग्नाचा बायोडाटा ऑनलाइन बनवा. माहिती भरा, पारंपरिक फुलांच्या बॉर्डरसह सुंदर बायोडाटा तयार करा आणि वॉटरमार्कशिवाय PNG इमेज किंवा PDF स्वरूपात डाउनलोड करा. Free Marathi marriage biodata maker." />
+  <meta name="keywords" content="मराठी बायोडाटा, लग्नाचा बायोडाटा, marathi biodata maker, marriage biodata, biodata format marathi, लग्न बायोडाटा नमुना, biodata pdf download, free biodata maker" />
+  <meta name="author" content="FreeBiodataMaker" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#e8590c" />
+  <!-- Update href with your real domain when deploying -->
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph (Facebook / WhatsApp) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FreeBiodataMaker" />
+  <meta property="og:title" content="FreeBiodataMaker — मोफत मराठी लग्नाचा बायोडाटा बनवा" />
+  <meta property="og:description" content="माहिती भरा आणि पारंपरिक डिझाइनमधला लग्नाचा बायोडाटा PNG किंवा PDF स्वरूपात मोफत डाउनलोड करा — वॉटरमार्कशिवाय." />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://example.com/og-image.png" />
+  <meta property="og:locale" content="mr_IN" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="FreeBiodataMaker — मोफत मराठी लग्नाचा बायोडाटा बनवा" />
+  <meta name="twitter:description" content="माहिती भरा आणि पारंपरिक डिझाइनमधला लग्नाचा बायोडाटा PNG किंवा PDF स्वरूपात मोफत डाउनलोड करा." />
+  <meta name="twitter:image" content="https://example.com/og-image.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "FreeBiodataMaker",
+    "alternateName": "मराठी बायोडाटा मेकर",
+    "url": "https://example.com/",
+    "description": "मोफत मराठी लग्नाचा बायोडाटा ऑनलाइन बनवा आणि PNG किंवा PDF स्वरूपात डाउनलोड करा.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "inLanguage": "mr",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <img src="wedding.png" alt="FreeBiodataMaker logo" class="brand-logo" />
+      <div>
+        <h1>FreeBiodataMaker</h1>
+        <p>माहिती भरा — बायोडाटा आपोआप तयार होईल. नंतर PNG किंवा PDF डाउनलोड करा.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="layout">
+    <!-- ================= FORM ================= -->
+    <section class="form-panel">
+      <details class="form-card translit-accordion">
+        <summary>
+          <span>इंग्रजी → मराठी टायपिंग साधन (मराठी कीबोर्ड नसेल तर)</span>
+          <span class="acc-chevron">▾</span>
+        </summary>
+        <div class="translit-box">
+          <p class="translit-box-info">कॉम्प्युटरमध्ये मराठी कीबोर्ड नसेल तर खालील बॉक्समध्ये इंग्रजी मध्ये टाइप करा ते मराठीत रूपांतरित होईल.</p>
+          <div class="translit-input-wrap">
+            <input type="text" id="translitBoxInput" placeholder="उदा. tumche nav" autocomplete="off" spellcheck="false" />
+            <div class="translit-suggest" id="translitSuggest" hidden></div>
+          </div>
+          <div class="translit-box-actions">
+            <button type="button" class="translit-box-btn" id="translitCopyBtn">Copy Text &#x2398;</button>
+            <button type="button" class="translit-box-btn" id="translitClearBtn">Clear Text &#x2715;</button>
+          </div>
+        </div>
+      </details>
+
+      <div class="form-card">
+        <h2 class="form-section-title">शीर्ष मंत्र</h2>
+        <div id="mantraList"></div>
+        <button type="button" class="add-field-btn" id="addMantraBtn">+ नवीन मंत्र जोडा</button>
+      </div>
+
+      <!-- sections rendered by script.js -->
+      <div id="formSections"></div>
+
+      <p class="hint">टीप: रिकामे ठेवलेले फील्ड बायोडाटामध्ये दिसणार नाही. लेबलसुद्धा बदलता येते.</p>
+    </section>
+
+    <!-- ================= PREVIEW ================= -->
+    <section class="preview-panel">
+      <div class="toolbar">
+        <button id="btnPng" class="btn btn-primary">फोटो डाउनलोड (PNG)</button>
+        <button id="btnPdf" class="btn btn-secondary">PDF डाउनलोड</button>
+      </div>
+
+      <div class="page-scroll">
+        <div class="page-wrap" id="pageWrap">
+          <div class="page" id="biodataPage">
+            <div class="b-top"></div>
+            <div class="b-bottom"></div>
+            <div class="b-left"></div>
+            <div class="b-right"></div>
+            <div class="b-corner tl"></div>
+            <div class="b-corner tr"></div>
+            <div class="b-corner bl"></div>
+            <div class="b-corner br"></div>
+
+            <div class="page-content">
+              <div id="pvMantras"></div>
+              <div id="pvSections"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
